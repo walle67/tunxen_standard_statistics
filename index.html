@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>URL跳转配置</title>
+            <script
+                    type="text/javascript"
+                    src="//statres.quickapp.cn/quickapp/js/routerinline.min.js">
+            </script>
+        </head>
+        <body>
+	速度反馈
+        <!-- 调起应用 -->
+            <script type="text/javascript">
+              // 需要在body标签里实现 appRouter 方法的调用
+              // 通过script标签引入routerinline.min.js后， appRouter函数会绑定到window上，因为是全局函数，所以可直接引用
+              // *** 注意 *** 此处 appRouter 两个示例选"其中一个"拷贝运行，即可查看效果
+
+              // 无需用户确认的调用方式，只传入三个参数
+              // 包名格式为 'xxx.yyy.zzz'，包名和 manifest.json 的"package"属性保持一致。
+              // 路径格式为 'aa/bb/cc'， 对应 manifest.json 中 router 下 page 的 path 字段。
+              // 透传参数类型为对象，快应用页面可通过 public 属性获取
+              appRouter('com.tunxen.standard', 'TunXenStandard/index', { a: 2, b: 'efg' })
+
+            </script>
+        </body>
+</html>
