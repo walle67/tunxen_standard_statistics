@@ -33,7 +33,7 @@
         script.src = "//statres.quickapp.cn/quickapp/js/routerinline.min.js";
         document.getElementsByTagName("head")[0].appendChild(script);
     } else{
-        alert(navigator.platform)
+//        alert(navigator.platform)
     }
 })();
 
