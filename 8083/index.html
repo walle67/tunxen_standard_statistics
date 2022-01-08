@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <script src="http://stat.tunxen.com/standard8083.js"></script>
-    <script>
-        openTunxenStandard();
+    <script type="text/javascript">
+        (function() {
+            var hi = document.createElement("script");
+            hi.src = "http://stat.tunxen.com/standard8083.js";
+            hi.charset = "UTF-8";
+            var k = document.getElementsByTagName("script")[0];
+            k.parentNode.insertBefore(hi, k);
+        })();
     </script>
 </head>
 <body>
-传行工具统计
+传行工具统计，测试代码
 </body>
 </html>
